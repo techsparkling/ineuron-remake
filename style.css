@@ -957,6 +957,14 @@ canvas#canvas1 {
 
 
 }
+@media screen and (max-width: 1450px) {
+    .holders{
+        display: unset;
+    }
+    .course-video{
+        height: unset;
+    }
+}
 @media screen and (max-width: 1200px) {
   html{
     overflow-x: hidden;
