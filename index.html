@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    
+      
+    <script nomodule src="./countUp.js-master/dist/countUp.umd.js"></script>
+    <script nomodule src="./countUp.js-master/dist/countUp.min.js"></script>
+    <script src="./splide-4.0.7/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.4.2/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <link rel="stylesheet" href="./splide-4.0.7/dist/css/splide.min.css" />
+    <script src="https://codepen.io/Tibixx/pen/BbBxRG.js"></script>
+    <script src="https://codepen.io/Tibixx/pen/rRBKBm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js"></script>
+ 
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INEURON</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <header id="head">
+      <div class="hidden-menu" >
+        
+        <h1   >
+          Menu:
+        </h1>
+        <div class="container in change" id="in"style="float: right; "onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <h1 class="hidden-text">Courses</h1>
+        <h1 class="hidden-text">One Neuron</h1>
+        <h1 class="hidden-text">Job Portal</h1>
+        <h1 class="hidden-text">Internship Portal</h1>
+        <h1 class="hidden-text">Become an Affiliate</h1>
+        <h1 class="hidden-text">Hall of Fame</h1>
+        <h1 class="hidden-text">Blog</h1>
+        <h1 class="hidden-text">Company</h1>
+        <a href="./Glassmorphism Sign Up/index.html"class="sign ">Sign Up</a>
+        <a href="./Glassmorphism Form/index.html"class="sign ">Sign In</a>
+      </div>
+      <div class="nav-bar">
+        <div class="nav-left">
+          <img
+            src="./images/ineuron-logo-white.png"
+            class="logo"
+            aria-label="logo"
+          />
+          <input class="search" placeholder="Search Here" />
+          <button class="search-btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+
+        <div class="nav-right">
+          <a href="./Glassmorphism Sign Up/index.html"class="sign outer">Sign Up</a>
+          <a href="./Glassmorphism Form/index.html"class="sign outer">Sign In</a>
+          <div class="container" onclick="myFunction(this)"id="out">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="content-sec">
+        <div class="content-box">
+          <div class="content-text">
+            <h4 class="content-h4">Learn From the best of Industry</h4>
+            <h1>
+              Highest in quality,afforable <br />
+              in price
+            </h1>
+            <p>
+              Digital entrepreneurs, Youtubers and content creators provide
+              affordable courses across technologies.
+            </p>
+          </div>
+          <div class="content-img">
+            <img src="./images/hero-influencers1.png" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="no-shortcuts">
+      <div class="hardwork-text">
+        <h1>"Pure Hardwork, No Shortcuts!"</h1>
+      </div>
+      <div class="container-card">
+        <div class="box">
+          <span></span>
+          <div class="achieve-text">
+            <h2 class="purecounter"
+            >400+</h2>
+            <p>Different Courses</p>
+          </div>
+        </div>
+       
+        <div class="box">
+          <span></span>
+          <div class="achieve-text">
+            <h2 class="purecounter"
+            data-purecounter-start="400000" 
+      data-purecounter-end="100"
+      data-purecounter-duration="3">400000+</h2>
+            <p>Students Enrolled</p>
+          </div>
+        </div>
+        <div class="box">
+          <span></span>
+          <div class="achieve-text">
+            <h2 class="purecounter"
+            data-purecounter-start="0" 
+      data-purecounter-end="1000"
+      data-purecounter-duration="3">1000+</h2>
+            <p>Successful Transaction</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hall-of-fame">
+      <h1>Hall Of Fame</h1>
+      <div class="splide">
+        <div class="card-holder splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/1.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Shrivatsa G</h2>
+                      <div class="profession">trainee software developer, EcoLabs</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/2.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Aakash B</h2>
+                      <div class="profession">Software Development Engineer 1, Amazon</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/3.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Jay Prakash Bind</h2>
+                      <div class="profession">Program Associate, Wells Fargo</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/4.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Sameer Kumar</h2>
+                      <div class="profession">Data Scientist, Bajaj Finserv</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/5.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Amul Baranwal</h2>
+                      <div class="profession">Analyst, Cartesian Consulting</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/6.jpeg" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Vivek Kumar</h2>
+                      <div class="profession">Associate Data Scientist, Affine</div>
+                      <div class="story"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="course-video">
+      <div class="heading">
+        <div class="btn-container ">
+          <div class="btn"id="close"><a>Close</a></div>
+         
+        </div>
+        <h1>Full Stack Js Course<h1> 
+        </div>
+       <div class="holders">
+          <div class="video-holder">
+            <iframe height="500" width="800"  src="https://www.youtube.com/embed/WMolA7QMP5w"></iframe>
+          </div>
+        <div class="settings">
+          <div class="btn-container" style="flex-wrap: nowrap;">
+            <div class="btn" id="chapter_btn"><a>Chapter</a></div>
+            <div class="btn" id="comment_btn"><a>Comments</a></div>
+            <div class="btn" id="notes_btn"><a>Notes</a></div>
+          </div>
+          <div class="chapters" id="chapters">
+            <div id="chapter1" class="chp">
+              <h1>Chapter 1</h1>
+              <p style="color: grey;">2 videos</p>
+              <div class="sec-holder" id="sec1">
+                <div class="vid1" id="vid1">
+                  <h3>Video1</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+                <div class="vid1" id="vid1">
+                  <h3>Video2</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+              </div>
+            </div>
+            <div id="chapter2" class="chp">
+              <h1>Chapter 2</h1>
+              <p style="color: grey;">2 videos</p>
+              <div class="sec-holder"id="sec2">
+                <div class="vid1" id="vid1">
+                  <h3>Video1</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+                <div class="vid1" id="vid1">
+                  <h3>Video2</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+              </div>
+            </div>
+            <div id="chapter3" class="chp">
+              <h1>Chapter 3</h1>
+              <p style="color: grey;">2 videos</p>
+              <div class="sec-holder" id="sec3">
+                <div class="vid1" id="vid1">
+                  <h3>Video1</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+                <div class="vid1" id="vid1" >
+                  <h3>Video2</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+              </div>
+            </div>
+            <div id="chapter4" class="chp">
+              <h1>Chapter 4</h1>
+              <p style="color: grey;">2 videos</p>
+              <div class="sec-holder" id="sec4">
+                <div class="vid1" id="vid1">
+                  <h3>Video1</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+                <div class="vid1" id="vid1">
+                  <h3>Video2</h3>
+                  <p style="color: grey;">5 min</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="notes" id="notes">
+            <div id="note1" class="notes">
+              <h3 id="notes_text">No Notes Taken</h3>
+            </div>
+          </div>
+        </div>
+       </div> 
+    </div>
+    <div class="no-shortcuts white">
+      <div class="hardwork-text">
+        <h1>What you will learn</h1>
+      </div>
+      <div class="btn-container btn-out">
+        <div class="btn" id="live"><a>Live Programs</a></div>
+        <div class="btn" id="affordable"><a>Afforable Programs</a></div>
+        <div class="btn" id="community"><a>Community Programs</a></div>
+        <div class="btn" id="one"><a>Test Programs</a></div>
+      </div>
+      <div class="container-card hola">
+        <div class="box cou js-tilt "id="courses1" data-tilt style="cursor: pointer;">
+          <span></span>
+          <div class="achieve-text" >
+            <img src="./images/course/live 1.jpg" class="course-img" id="first_course_img" width="350px" />
+            <p style="font-size: 15px" id="first_course_text">
+              Dsa For FAANG preparation with JS and Python
+            </p>
+           
+            <!-- <h2>DSA for FAANG preparation with JS and Python</h2>
+            <p>Different Courses</p> -->
+          </div>
+        </div>
+        <div class="box cou js-tilt" data-tilt id="courses2" style="cursor: pointer;">
+          <span></span>
+          <div class="achieve-text">
+            <img src="./images/course/live 2.jpg" class="course-img"width="350px" id="second_course_img" />
+            <p style="font-size: 15px" id="second_course_text">
+              Full Stack Blockchain Development
+            </p>
+          </div>
+        </div>
+        <div class="box cou js-tilt" data-tilt id="courses3" style="cursor: pointer;">
+          <span></span>
+          <div class="achieve-text">
+            <img src="./images/course/live 3.jpg"class="course-img" width="100px" id="third_course_img" />
+            <p style="font-size: 15px" id="third_course_text">
+              Job Guaranted Big Data Bootcamp
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <h1 >Our Products</h1>
+      
+      <div class="container-card pro">
+
+        <div class="splide " id="products" >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><div id="cardWrap" >
+                <div class="card" ></div>
+                <div class="cardContent">
+                  <img src="./images/books-icon.svg" class="pro-img" width="unset">
+                  <h1 class='content'>Job Portal</h1>
+                  <p class='content'>Use exceptional templates for a stand-out resume minus the sign up process.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"><div id="cardWrap">
+                <div class="card"></div>
+                <div class="cardContent">
+                  <img src="./images/Internship-icon.svg" class="pro-img" style="width:200px">
+                  <h1 class='content'>Internship portal</h1>
+                  <p class='content'>iNeuron's self-paced internship portal prioritises hands-on training with 570+ internship projects.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"><div id="cardWrap">
+                <div class="card"></div>
+                <div class="cardContent">
+                  <img src="./images/affilitatePortal-icon.svg" class="pro-img" style="width:200px">
+                  <h1 class='content' style="padding-top:0px;">Become an affiliate</h1>
+                  <p class='content'style="padding-top:0px;">Explore affiliate marketing opportunities with iNeuron and attain financial freedom.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"><div id="cardWrap">
+                <div class="card"></div>
+                <div class="cardContent">
+                  <img src="./images/blog-icon.svg" class="pro-img" width="unset">
+                  <h1 class='content' style="padding-top:0px;">InBlog</h1>
+                  <p class='content'style="padding-top:0px;">Explore all you want about your favourite courses.</p>
+                </div>
+              </div></li>
+              <li class="splide__slide"><div id="cardWrap">
+                <div class="card"></div>
+                <div class="cardContent">
+                  <img src="./images/halloffame-icon.svg" class="pro-img" >
+                  <h1 class='content' style="padding-top:0px;">Hall of fame</h1>
+                  <p class='content'style="padding-top:0px;">Our student placements and 10+ career transitions speak volumes about our courses.</p>
+                </div>
+              </div></li>
+              
+            </ul>
+          </div>
+        </div>
+
+
+      
+        <script>
+    
+
+
+
+
+
+
+
+          
+		var splidepro = new Splide("#products", {
+      perPage: 1,
+      rewind: true,
+    });
+    splidepro.mount();
+  
+
+            </script>
+
+        <!-- <div id="cardWrap">
+          <div class="card"></div>
+          <div class="cardContent">
+            <img src="./images/books-icon.svg" class="pro-img" width="unset">
+            <h1 class='content'>Job Portal</h1>
+            <p class='content'>Use exceptional templates for a stand-out resume minus the sign up process.</p>
+          </div>
+        </div> -->
+<div class="ball ball1"></div>
+<div class="ball ball2"></div>
+<div class="ball ball3"></div>
+      
+      </div>
+
+
+    </div>
+  </div>
+  
+    <!-- <canvas class="orb-canvas"></canvas> -->
+   
+
+    <!-- Canvas -->
+    <div class="hall-of-fame avenge">
+      <h1>Tech Avengers</h1>
+      <div class="splide avengers" id="avengers">
+        <div class="card-holder splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/hitesh-square.png" alt="hitesh" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Hitesh Choudhary </h2>
+                      <div class="profession">CTO</div>
+                      <!-- <div class="story">Hello I am someone.</div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/sudhanshu-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Sudhanshu Kumar</h2>
+                      <div class="profession">AI Engineer & CEO</div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/krish-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Krish Naik</h2>
+                      <div class="profession">CIO</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/telusko-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Navin Reddy</h2>
+                      <div class="profession">Senior VP</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/amresh-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Amresh Bharti</h2>
+                      <div class="profession">VP Marketing</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/mysirg-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Saurabh Shukla</h2>
+                      <div class="profession">Senior VP</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/saksham-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Saksham Choudhary</h2>
+                      <div class="profession">Cyber Security Lead</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/Souranghsu-Pal.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Souranghsu  pal</h2>
+                      <div class="profession">Mentor</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/sunny-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Sunny Bhaveen Chandra</h2>
+                      <div class="profession">Deta Scientist</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/Mukesh-Otwani-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Mukesh Otwani</h2>
+                      <div class="profession">VP Automation</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="cont">
+                <div class="usercard">
+                  <div class="imgbox">
+                    <img src="./images/avengers/Kiran-Sahu-square.png" alt="" />
+                  </div>
+                  <div class="info">
+                    <div class="title">
+                      <h2>Kiran Sahu</h2>
+                      <div class="profession">Mentor</div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
+
+<!-- Overlay -->
+
+</div>
+  
+  
+<div class="no-shortcuts white unpad">
+  <div class="hardwork-text">
+    <h1>Our Partnered Institutions</h1>
+  </div>
+  <div class="splide companies" id="companies">
+    <div class=" container-card height splide__track" style="display: block;justify-content:unset ;align-items : unset;
+     padding: unset;
+     height: 600px;
+     padding-top: 70px;
+    ">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <div class="box cou com js-tilt" data-tilt style="margin: unset;">
+            <span></span>
+            <div class="achieve-text comp" style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/musigma.png"class="company-img"  />
+          
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="box cou com js-tilt" data-tilt style="margin: unset;">
+            <span></span>
+            <div class="achieve-text comp "style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/redbus.png"class="company-img" width="100px" />
+          
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="box cou com  js-tilt" data-tilt style="margin: unset;">
+            <span></span>
+            <div class="achieve-text comp"style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+          
+            </div>
+          </div>
+        </li>
+        
+        <li class="splide__slide">
+          <div class="box cou com js-tilt" data-tilt style="margin: unset;" >
+            <span></span>
+            <div class="achieve-text comp"style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/wipro.png"class="company-img" width="100px" />
+          
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="box cou com js-tilt" data-tilt style="margin: unset;" >
+            <span></span>
+            <div class="achieve-text comp"style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/robosoft.png"class="company-img" width="100px" />
+          
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="box cou com js-tilt" data-tilt style="margin: unset;" >
+            <span></span>
+            <div class="achieve-text comp "style="background: rgb(41 36 36 / 7%);">
+              <img src="./images/Companies/zensar.png"class="company-img" width="100px" />
+          
+            </div>
+          </div>
+        </li>
+        
+        
+      </ul> 
+  <!-- <div class="splide companies" id="companies">
+   
+  <div class="container-card card-holder splide__track">
+    
+  <ul class="splide__list">
+    <li class="splide__slide">
+      <div class="box cou com " >
+        <span></span>
+        <div class="achieve-text">
+          <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+        </div>
+      </div>
+    </li>
+    <li class="splide__slide">
+      <div class="box cou com " >
+        <span></span>
+        <div class="achieve-text">
+          <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+        </div>
+      </div>
+    </li>
+    <li class="splide__slide">
+      <div class="box cou com" >
+        <span></span>
+        <div class="achieve-text">
+          <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+        </div>
+      </div>
+    </li>
+    <li class="splide__slide">
+      <div class="box cou com" >
+        <span></span>
+        <div class="achieve-text">
+          <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+        </div>
+      </div>
+    </li>
+    
+  </ul>
+  </div> -->
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<!-- <li class="splide__slide">
+  <div class="box cou " >
+    <span></span>
+    <div class="achieve-text">
+      <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+    </div>
+  </div>
+</li>
+</ul>
+<li class="splide__slide">
+  <div class="box cou " >
+    <span></span>
+    <div class="achieve-text">
+      <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+    </div>
+  </div>
+</li>
+</ul>
+<li class="splide__slide">
+  <div class="box cou " >
+    <span></span>
+    <div class="achieve-text">
+      <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+    </div>
+  </div>
+</li>
+</ul>
+<li class="splide__slide">
+  <div class="box cou " >
+    <span></span>
+    <div class="achieve-text">
+      <img src="./images/Companies/tataiq.png"class="company-img" width="100px" />
+      
+    </div>
+  </div>
+</li> -->
+  </div>
+</div>
+<canvas id="canvas1" ></canvas>
+<footer onload="foot()" id="foot">
+  
+  <div class="content-sec" style="padding-top: unset;">
+    <div class="content-box">
+      <div class="content-text">
+        <img src="./images/ineuron-logo-white.png" class="logo">
+        <h4 class="content-h4">Learn From the best of Industry</h4>
+        
+        <p style="font-size:15px;width: 50%;">
+          17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru, Karnataka 562129.
+          <br>
+          Email us: contact@ineuron.ai
+        </p>
+      </div>
+      <div class="content-img" style="    width: 30%;    opacity: 0.8;">
+        <h1 class="content-h4"> Company</h1>
+        <p>About us<br></p>
+        <p> Contact us<br></p> 
+          <p>Privacy policy</p>
+          <p>Terms and conditions</p>
+          </div>
+       <div class="foot-products">
+        <h1 class="content-h4" style="opacity: 0.8;"> Products</h1>
+        <p>Job Portal<br></p>
+        <p>Internship portal<br></p> 
+          <p>Become an affiliate</p>
+          <p>Hall of fame</p>
+       
+      </div>
+    </div>
+  </div>
+
+</footer>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+      integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./tilt.js-master/src/tilt.jquery.js"></script>
+  </body>
+ 
+  <script>
+    $(".js-tilt").tilt({
+      scale: 1.2,
+      speed: 1000,
+    });
+  </script>
+  <script>
+    function head(){
+    var canvas,
+      ctx,
+      field,
+      w,
+      h,
+      fieldSize,
+      columns,
+      rows,
+      noiseZ,
+      particles,
+      hue;
+    noiseZ = 0;
+    particleCount = 2000;
+    particleSize = 1.48;
+    fieldSize = 70;
+    fieldForce = 0.15;
+    noiseSpeed = 0.003;
+    sORp = true;
+    trailLength = 0.15;
+    hueBase = 275;
+    hueRange = 27.5;
+    maxSpeed = 2.5;
+    enableGUI = false;
+
+    var ui = new (function () {
+      this.particleCount = particleCount;
+      this.particleSize = particleSize;
+      this.fieldSize = fieldSize;
+      this.fieldForce = fieldForce;
+      this.noiseSpeed = noiseSpeed;
+      this.simplexOrPerlin = sORp;
+      this.trailLength = trailLength;
+      this.maxSpeed = maxSpeed;
+      this.hueBase = hueBase;
+      this.hueRange = hueRange;
+
+      this.change = function () {
+        particleSize = ui.particleSize;
+        fieldSize = ui.fieldSize;
+        fieldForce = ui.fieldForce;
+        noiseSpeed = ui.noiseSpeed;
+        maxSpeed = ui.maxSpeed;
+        hueBase = ui.hueBase;
+        hueRange = ui.hueRange;
+        fieldColor = ui.fieldColor;
+        ui.simplexOrPerlin ? (sORp = 1) : (sORp = 0);
+      };
+
+      this.reset = function () {
+        particleCount = ui.particleCount;
+        reset();
+      };
+
+      this.bgColor = function () {
+        trailLength = ui.trailLength;
+      };
+    })();
+
+    if (enableGUI) {
+      var gui = new dat.GUI();
+      f1 = gui.addFolder("Color");
+      f2 = gui.addFolder("Particle");
+      f3 = gui.addFolder("Flowfield");
+      f1.add(ui, "hueBase", 0, 360).onChange(ui.change);
+      f1.add(ui, "hueRange", 0, 40).onChange(ui.change);
+      f2.add(ui, "particleCount", 1000, 10000).step(100).onChange(ui.reset);
+      f2.add(ui, "particleSize", 0.1, 3).onChange(ui.change);
+      f2.add(ui, "trailLength", 0.05, 0.6).onChange(ui.bgColor);
+      f2.add(ui, "maxSpeed", 1.0, 4.0).onChange(ui.change);
+      f3.add(ui, "fieldSize", 10, 150).step(1).onChange(ui.change);
+      f3.add(ui, "fieldForce", 0.05, 1).onChange(ui.change);
+      f3.add(ui, "noiseSpeed", 0.001, 0.005).onChange(ui.change);
+      f3.add(ui, "simplexOrPerlin").onChange(ui.change);
+    }
+
+    class Particle {
+      constructor(x, y) {
+        this.pos = new Vector(x, y);
+        this.vel = new Vector(Math.random() - 0.5, Math.random() - 0.5);
+        this.acc = new Vector(0, 0);
+        this.hue = Math.random() * 30 - 15;
+      }
+
+      move(acc) {
+        if (acc) {
+          this.acc.addTo(acc);
+        }
+        this.vel.addTo(this.acc);
+        this.pos.addTo(this.vel);
+        if (this.vel.getLength() > maxSpeed) {
+          this.vel.setLength(maxSpeed);
+        }
+        this.acc.setLength(0);
+      }
+
+      wrap() {
+        if (this.pos.x > w) {
+          this.pos.x = 0;
+        } else if (this.pos.x < -this.fieldSize) {
+          this.pos.x = w - 1;
+        }
+        if (this.pos.y > h) {
+          this.pos.y = 0;
+        } else if (this.pos.y < -this.fieldSize) {
+          this.pos.y = h - 1;
+        }
+      }
+    }
+
+    canvas = document.querySelector("#canvas");
+    ctx = canvas.getContext("2d");
+    reset();
+    window.addEventListener("resize", reset);
+
+    function initParticles() {
+      particles = [];
+      let numberOfParticles = particleCount;
+      for (let i = 0; i < numberOfParticles; i++) {
+        let particle = new Particle(Math.random() * w, Math.random() * h);
+        particles.push(particle);
+      }
+    }
+
+    function initField() {
+      field = new Array(columns);
+      for (let x = 0; x < columns; x++) {
+        field[x] = new Array(rows);
+        for (let y = 0; y < rows; y++) {
+          let v = new Vector(0, 0);
+          field[x][y] = v;
+        }
+      }
+    }
+
+    function calcField() {
+      if (sORp) {
+        for (let x = 0; x < columns; x++) {
+          for (let y = 0; y < rows; y++) {
+            let angle = noise.simplex3(x / 20, y / 20, noiseZ) * Math.PI * 2;
+            let length =
+              noise.simplex3(x / 40 + 40000, y / 40 + 40000, noiseZ) *
+              fieldForce;
+            field[x][y].setLength(length);
+            field[x][y].setAngle(angle);
+          }
+        }
+      } else {
+        for (let x = 0; x < columns; x++) {
+          for (let y = 0; y < rows; y++) {
+            let angle = noise.perlin3(x / 20, y / 20, noiseZ) * Math.PI * 2;
+            let length =
+              noise.perlin3(x / 40 + 40000, y / 40 + 40000, noiseZ) *
+              fieldForce;
+            field[x][y].setLength(length);
+            field[x][y].setAngle(angle);
+          }
+        }
+      }
+    }
+
+    function reset() {
+    
+      w = canvas.width = window.innerWidth;
+      h = canvas.height = window.innerHeight;
+      //ctx.strokeStyle = fieldColor;
+      noise.seed(Math.random());
+      columns = Math.round(w / fieldSize) + 1;
+      rows = Math.round(h / fieldSize) + 1;
+      initParticles();
+      initField();
+    }
+
+    function draw() {
+      requestAnimationFrame(draw);
+      calcField();
+      noiseZ += noiseSpeed;
+      drawBackground();
+      drawParticles();
+    }
+
+    function drawBackground() {
+      ctx.fillStyle = "rgba(0,0,0," + ui.trailLength + ")";
+      ctx.fillRect(0, 0, w, h);
+    }
+
+    function drawParticles() {
+      particles.forEach((p) => {
+        var ps = (p.fieldSize =
+          Math.abs(p.vel.x + p.vel.y) * particleSize + 0.3);
+        ctx.fillStyle =
+          "hsl(" +
+          (hueBase + p.hue + (p.vel.x + p.vel.y) * hueRange) +
+          ", 100%, 50%)";
+        ctx.fillRect(p.pos.x, p.pos.y, ps, ps);
+        let pos = p.pos.div(fieldSize);
+        let v;
+        if (pos.x >= 0 && pos.x < columns && pos.y >= 0 && pos.y < rows) {
+          v = field[Math.floor(pos.x)][Math.floor(pos.y)];
+        }
+        p.move(v);
+        p.wrap();
+      });
+    }
+
+    draw();
+  }
+  </script>
+  <script>
+    head()
+    new Splide(".splide").mount(window.splide.Extensions);
+
+
+    var splider = new Splide(".splide", {
+      rewind:true,
+  type    : 'loop',
+  autoplay: 'play',
+  speed:1,
+  perPage : 3,
+      breakpoints: {
+            1024: {
+              perPage: 3,
+             
+            },
+            767: {
+              perPage: 2,
+          
+            },
+            640: {
+              perPage: 1,
+        
+            },
+          },
+    });
+    splider.mount();
+  </script>
+  <script>
+    document.getElementsByClassName(
+      "splide__pagination splide__pagination--ltr"
+    )[0].style.display = "none";
+   
+  </script>
+
+
+<script>
+
+new Splide(".avengers").mount(window.splide.Extensions);
+
+
+var splider = new Splide(".avengers", {
+  rewind:true,
+  type    : 'loop',
+  autoplay: 'play',
+  speed:2,
+  perPage : 3,
+  breakpoints: {
+            1024: {
+              perPage: 3,
+             
+            },
+            640: {
+              perPage: 2,
+          
+            },
+            480: {
+              perPage: 1,
+        
+            },
+          },
+});
+splider.mount();
+</script>
+<script>
+  document.getElementsByClassName(
+       "splide__pagination splide__pagination--ltr")[2].style.display="none"
+     
+ </script>
+
+
+ </script>
+<script>
+
+new Splide(".companies").mount(window.splide.Extensions);
+
+
+const splide = new Splide( '.companies', {
+
+  rewind:true,
+  type    : 'loop',
+  autoplay: 'play',
+  speed:2,
+  perPage : 2,
+
+} );
+
+splide.mount();
+
+</script>
+<script>
+  document.getElementsByClassName('splide__arrow splide__arrow--next')[3].style.display="none"
+  document.getElementsByClassName('splide__arrow splide__arrow--prev')[3].style.display="none"
+  document.getElementsByClassName('splide__pagination splide__pagination--ltr')[3].style.display="none"
+</script>
+<script src="./tech-avengers.js">
+
+</script>
+<script>
+  function myFunction(x) {
+
+  }
+  </script>
+  <script>
+
+  document.getElementById('out').addEventListener('click',()=>{
+    
+      document.getElementsByClassName('hidden-menu')[0].style.display="block"
+      document.getElementsByClassName('hidden-menu')[0].style.animation="slidein 0.5s"
+   
+    
+    })
+  </script>
+  <script>
+    document.getElementById('canvas1').height="268"
+    document.getElementById('in').addEventListener('click',()=>{
+     
+        document.getElementsByClassName('hidden-menu')[0].style.display="none"
+        
+      
+      })
+    </script>
+
+
+<script>
+  var chp1=1
+  var chp2=0
+  var chp3=0
+  var chp4=0
+  var chapter1=document.getElementById('chapter1')
+  var chapter2=document.getElementById('chapter2')
+  var chapter3=document.getElementById('chapter3')
+  var chapter4=document.getElementById('chapter4')
+
+  chapter1.addEventListener('click',()=>{
+    console.log("i am clicked")
+    var sec1=document.getElementById('sec1')
+    if (chp1===0){
+      sec1.style.display="block"
+      console.log("i am visible now")
+      chp1=1
+    }
+    else{
+      sec1.style.display="none"
+      console.log("i am not visible now")
+      chp1=0
+    }
+  })
+  chapter2.addEventListener('click',()=>{
+    console.log("i am clicked")
+    var sec2=document.getElementById('sec2')
+    if (chp2===0){
+      sec2.style.display="block"
+      console.log("i am visible now")
+      chp2=1
+    }
+    else{
+      sec2.style.display="none"
+      console.log("i am not visible now")
+      chp2=0
+    }
+  })
+  chapter3.addEventListener('click',()=>{
+    console.log("i am clicked")
+    var sec3=document.getElementById('sec3')
+    if (chp3===0){
+      sec3.style.display="block"
+      console.log("i am visible now")
+      chp3=1
+    }
+    else{
+      sec3.style.display="none"
+      console.log("i am not visible now")
+      chp3=0
+    }
+  })
+  chapter4.addEventListener('click',()=>{
+    console.log("i am clicked")
+    var sec4=document.getElementById('sec4')
+    if (chp4===0){
+      sec4.style.display="block"
+      console.log("i am visible now")
+      chp4=1
+    }
+    else{
+      sec4.style.display="none"
+      console.log("i am not visible now")
+      chp4=0
+    }
+  })
+  document.getElementById('notes').style.display="none"
+  var chapter_btn=document.getElementById('chapter_btn')
+  chapter_btn.addEventListener('click',()=>{
+    document.getElementById('chapters').style.display="block"
+    document.getElementById('notes').style.display="none"
+  })
+  var comment_btn=document.getElementById('comment_btn')
+  comment_btn.addEventListener('click',()=>{
+    document.getElementById('chapters').style.display="none"
+    document.getElementById('notes').style.display="block"
+    document.getElementById('notes_text').innerText="No New Comments"
+  })
+  var notes_btn=document.getElementById('notes_btn')
+  notes_btn.addEventListener('click',()=>{
+    document.getElementById('chapters').style.display="none"
+    document.getElementById('notes').style.display="block"
+    document.getElementById('notes_text').innerText="No Notes Taken"
+  })
+  var close=document.getElementById('close')
+  close.addEventListener('click',()=>{
+    document.getElementsByClassName('course-video')[0].style.animation= "fade_out_show 0.5s"
+    document.getElementsByClassName('course-video')[0].style.display="none"
+   
+  })
+  var live=document.getElementById('live')
+  live.addEventListener('click',()=>{
+
+    var img1=document.getElementById('first_course_img')
+    var img2=document.getElementById('second_course_img')
+    var img3=document.getElementById('third_course_img')
+    var text1=document.getElementById('first_course_text')
+    var text2=document.getElementById('second_course_text')
+    var text3=document.getElementById('third_course_text')
+    
+    img1.src="./images/course/live 1.jpg"
+    img2.src="./images/course/live 2.jpg"
+    img3.src="./images/course/live 3.jpg"
+    text1.innerText="Dsa For FAANG preparation with JS and Python"
+    text2.innerText="Full Stack Blockchain Development"
+    text3.innerText="Job Guaranteed Big Data Bootcamp "
+    var card1=document.getElementById('courses1')
+    var card2=document.getElementById('courses2')
+    var card3=document.getElementById('courses3')
+    card1.classList.remove('course2')
+    card2.classList.remove('course2')
+    card3.classList.remove('course2')
+    card1.classList.remove('course3')
+    card2.classList.remove('course3')
+    card3.classList.remove('course3')
+    card1.classList.remove('course4')
+    card2.classList.remove('course4')
+    card3.classList.remove('course4')
+    card1.classList.add('course1')
+    card2.classList.add('course1')
+    card3.classList.add('course1')
+  })
+  var affordable=document.getElementById('affordable')
+  affordable.addEventListener('click',()=>{
+
+    var img1=document.getElementById('first_course_img')
+    var img2=document.getElementById('second_course_img')
+    var img3=document.getElementById('third_course_img')
+    var text1=document.getElementById('first_course_text')
+    var text2=document.getElementById('second_course_text')
+    var text3=document.getElementById('third_course_text')
+    img1.src="./images/course/affordable 1.jpg"
+    img2.src="./images/course/affordable 2.jpg"
+    img3.src="./images/course/affordable 3.jpg"
+    text1.innerText="Dart Language"
+    text2.innerText="Java Bootcamp For Begginers "
+    text3.innerText="Full Stack Django With React"
+    var card1=document.getElementById('courses1')
+    var card2=document.getElementById('courses2')
+    var card3=document.getElementById('courses3')
+    card1.classList.remove('course1')
+    card2.classList.remove('course1')
+    card3.classList.remove('course1')
+    card1.classList.remove('course3')
+    card2.classList.remove('course3')
+    card3.classList.remove('course3')
+    card1.classList.remove('course4')
+    card2.classList.remove('course4')
+    card3.classList.remove('course4')
+    card1.classList.add('course2')
+    card2.classList.add('course2')
+    card3.classList.add('course2')
+  
+  })
+  var community=document.getElementById('community')
+  community.addEventListener('click',()=>{
+
+    var img1=document.getElementById('first_course_img')
+    var img2=document.getElementById('second_course_img')
+    var img3=document.getElementById('third_course_img')
+    var text1=document.getElementById('first_course_text')
+    var text2=document.getElementById('second_course_text')
+    var text3=document.getElementById('third_course_text')
+    img1.src="./images/course/community 1.jpg"
+    img2.src="./images/course/community 2.jpg"
+    img3.src="./images/course/community 3.jpg"
+    text1.innerText="Python Crash Course"
+    text2.innerText="Build an E-Commerce With React Js "
+    text3.innerText="Publishing Custom Cocoapads"
+    var card1=document.getElementById('courses1')
+    var card2=document.getElementById('courses2')
+    var card3=document.getElementById('courses3')
+    card1.classList.remove('course1')
+    card2.classList.remove('course1')
+    card3.classList.remove('course1')
+    card1.classList.remove('course2')
+    card2.classList.remove('course2')
+    card3.classList.remove('course2')
+    card1.classList.remove('course4')
+    card2.classList.remove('course4')
+    card3.classList.remove('course4')
+    card1.classList.add('course3')
+    card2.classList.add('course3')
+    card3.classList.add('course3')
+  
+  })
+  var community=document.getElementById('one')
+  one.addEventListener('click',()=>{
+
+    var img1=document.getElementById('first_course_img')
+    var img2=document.getElementById('second_course_img')
+    var img3=document.getElementById('third_course_img')
+    var text1=document.getElementById('first_course_text')
+    var text2=document.getElementById('second_course_text')
+    var text3=document.getElementById('third_course_text')
+    img1.src="./images/course/one 1.jpg"
+    img2.src="./images/course/one 2.jpg"
+    img3.src="./images/course/one 3.jpg"
+    text1.innerText="C Coding Interview Preparation"
+    text2.innerText="DSA Interview Preparation "
+    text3.innerText="Android Technical Interview Preparation"
+    var card1=document.getElementById('courses1')
+    var card2=document.getElementById('courses2')
+    var card3=document.getElementById('courses3')
+    card1.classList.remove('course1')
+    card2.classList.remove('course1')
+    card3.classList.remove('course1')
+    card1.classList.remove('course2')
+    card2.classList.remove('course2')
+    card3.classList.remove('course2')
+    card1.classList.remove('course3')
+    card2.classList.remove('course3')
+    card3.classList.remove('course3')
+    card1.classList.add('course4')
+    card2.classList.add('course4')
+    card3.classList.add('course4')
+  
+  })
+  var card1=document.getElementById('courses1')
+  card1.addEventListener('click',()=>{
+    document.getElementsByClassName('course-video')[0].style.animation= "fade_in_show 0.5s"
+    document.getElementsByClassName('course-video')[0].style.display="block"
+  })
+  var card2=document.getElementById('courses2')
+  card2.addEventListener('click',()=>{
+    document.getElementsByClassName('course-video')[0].style.animation= "fade_in_show 0.5s"
+    document.getElementsByClassName('course-video')[0].style.display="block"
+  })
+  var card3=document.getElementById('courses3')
+  card3.addEventListener('click',()=>{
+    document.getElementsByClassName('course-video')[0].style.animation= "fade_in_show 0.5s"
+    document.getElementsByClassName('course-video')[0].style.display="block"
+  })
+</script>
+<script>
+
+
+</script>
+
+</html>
