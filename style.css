@@ -943,6 +943,16 @@ canvas#canvas1 {
         transform: translateY(-10px);
     }
 }
+@media screen and (max-width: 1350px) {
+    input.search {
+        display: none;
+    }
+
+
+
+
+
+}
 @media screen and (max-width: 1200px) {
   html{
     overflow-x: hidden;
