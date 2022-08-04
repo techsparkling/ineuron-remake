@@ -947,8 +947,12 @@ canvas#canvas1 {
     input.search {
         display: none;
     }
-
-
+    .holders{
+        display: unset;
+    }
+    .course-video{
+        height: unset;
+    }
 
 
 
